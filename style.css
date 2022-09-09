@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #F9FAFE;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #34495E;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card span:hover{
+    background-color: #566573;
+}
+
+.card-img{
+    position: absolute;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.card-img img{
+    width: 260px;
+    height: 260px;
+    transform: rotate(40deg);
+}
+
+.card:hover .card-img{
+    transform: rotate(-30deg); 
+    transition: 0.5s;
+}
+
+.card:hover{
+    height: 300px;
+} 
+
+.card-detail{
+    margin-top: 120px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+}
+
+.card-detail h3{
+    margin-top: 25px;
+}
+
+.card-detail span{
+    background: #5D6D7E;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    color: white; 
+    transition: 0.3s;
+    overflow: hidden; 
+}
+
+.size{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    text-align: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.size a{
+    background:#5D6D7E;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.size a:hover{
+
+}
